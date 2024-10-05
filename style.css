@@ -1,83 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+  background: #f4f4f4; /* Warna latar belakang terang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-header {
-    background: linear-gradient(90deg, #4caf50, #81c784);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff; /* Latar belakang putih untuk kontras */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 15px; /* Sudut yang lebih bulat */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.container .left_Side {
+  background: #34495e; /* Warna gelap untuk bagian kiri */
+  color: #ffffff; /* Teks putih untuk kontras */
+  padding: 40px;
+  position: relative;
+  border-right: 4px solid #2ecc71; /* Garis pemisah yang lebih tebal */
 }
 
-header p {
-    font-size: 1.2rem;
+.profileText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.btn {
-    background: white;
-    color: #4caf50;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.profileText .imgBx {
+  width: 130px; /* Ukuran gambar */
+  height: 130px; /* Ukuran gambar */
+  border-radius: 50%; /* Bentuk bulat */
+  overflow: hidden;
+  border: 4px solid #ffffff; /* Border putih */
 }
 
-nav {
-    background: #333;
+.profileText .imgBx img {
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  object-fit: cover; /* Mempertahankan rasio aspek */
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px 0;
+.profileText h2 {
+  font-size: 1.6em; /* Ukuran nama */
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
-nav ul li {
-    margin: 0 15px;
+.profileText h2 span {
+  font-size: 0.95em; /* Ukuran tambahan */
+  font-weight: 300;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+.contactInfo {
+  padding-top: 20px; /* Padding di atas */
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+.title {
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 1px; /* Spasi antar huruf */
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Garis bawah halus */
 }
 
-section {
-    margin: 20px 0;
+.contactInfo ul {
+  list-style: none; /* Menghapus bullet */
+  padding: 0; /* Mengatur ulang padding */
 }
 
-.project {
-    background: #f4f4f4;
-    padding: 20px;
-    border-left: 5px solid #4caf50;
-    margin-bottom: 20px;
+.contactInfo ul li {
+  margin: 15px 0; /* Jarak antar item */
+  display: flex;
+  align-items: center; /* Rata tengah */
 }
 
-.project h3 {
-    margin-bottom: 10px;
+.contactInfo ul li a {
+  text-decoration: none; /* Menghapus garis bawah */
+  color: #ffffff; /* Teks putih */
 }
 
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background: #333;
-    color: #fff;
+.contactInfo ul li .icon {
+  width: 25px; /* Lebar ikon */
+  font-size: 22px; /* Ukuran ikon */
+  color: #2ecc71; /* Warna hijau untuk ikon */
+  margin-right: 10px; /* Spacing */
+}
+
+.contactInfo ul li span {
+  font-weight: 300; /* Bobot teks */
+}
+
+.contactInfo.education h5 {
+  color: #2ecc71; /* Warna hijau untuk pendidikan */
+}
+
+.container .right_Side {
+  padding: 40px; /* Padding bagian kanan */
+  position: relative;
+  background: #ffffff; /* Latar belakang putih */
+  border-left: 4px solid #2ecc71; /* Garis pemisah di sebelah kiri */
+}
+
+.about {
+  margin-bottom: 40px; /* Jarak bawah */
+}
+
+.title2 {
+  color: #2c3e50; /* Warna gelap untuk judul */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2ecc71; /* Garis bawah */
+  padding-bottom: 5px; /* Padding bawah */
+}
+
+p {
+  color: #555; /* Warna teks lembut */
+  margin-bottom: 20px; /* Jarak bawah */
+  line-height: 1.6; /* Tinggi baris */
+}
+
+.about .box {
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: row; /* Menuju horizontal */
+  margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.about .box .year_company {
+  min-width: 150px; /* Lebar minimal untuk tahun dan perusahaan */
+}
+
+.about .box .year_company h5 {
+  color: #7f8c8d; /* Warna abu-abu untuk tahun */
+  font-weight: 600; /* Bobot teks */
+}
+
+.about .box .year_company span {
+  font-size: 10px; /* Ukuran teks kecil */
+  font-weight: 200; /* Bobot lebih ringan */
+  font-style: italic; /* Miring */
+}
+
+.about .box .text h4 {
+  color: #27ae60; /* Warna hijau */
+  font-size: 16px; /* Ukuran teks */
+}
+
+.about .box .text ul li {
+  color: #555; /* Warna teks lembut */
+  margin: 5px 0 0 15px; /* Jarak antar item */
+}
+
+.skills .box {
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-between; /* Ruang antara item */
+  align-items: center; /* Rata tengah */
+  margin-bottom: 10px; /* Jarak bawah */
+}
+
+.skills .box h4 {
+  color: #7f8c8d; /* Warna abu-abu untuk keterampilan */
+  font-weight: 500; /* Bobot teks */
+}
+
+.skills .box .percent {
+  width: 100%; /* Lebar penuh */
+  height: 8px; /* Tinggi batang keterampilan */
+  background: #ecf0f1; /* Latar belakang batang */
+  border-radius: 5px; /* Sudut bulat */
+}
+
+.skills .box .percent div {
+  height: 100%; /* Tinggi penuh */
+  background: #27ae60; /* Warna progres */
+  border-radius: 5px; /* Sudut bulat */
+}
+
+.interest ul {
+  display: grid; /* Menggunakan grid */
+  grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+}
+
+.interest ul li {
+  list-style: none; /* Menghapus bullet */
+  color: #555; /* Warna teks lembut */
+  font-weight: 500; /* Bobot teks */
+  margin: 10px 0; /* Jarak antar item */
+}
+
+.interest ul li .fa {
+  color: #27ae60; /* Warna ikon */
+  font-size: 18px; /* Ukuran ikon */
+  width: 20px; /* Lebar ikon */
+}
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr; /* Menumpuk di layar kecil */
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column; /* Menumpuk item di kolom */
+  }
+  .about .box .year_company {
+    margin-bottom: 5px; /* Jarak bawah */
+  }
+  .interest ul {
+    grid-template-columns: 1fr; /* Satu kolom */
+  }
+  .skills .box {
+    flex-direction: column; /* Menumpuk item keterampilan */
+  }
 }

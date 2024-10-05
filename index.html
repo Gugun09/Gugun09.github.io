@@ -1,61 +1,234 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Programmer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Nanda Gunawan</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Nama Anda</h1>
-            <p>Programmer | Web Developer | Enthusiast</p>
-            <a href="#projects" class="btn">Lihat Proyek Saya</a>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang programmer yang berdedikasi dengan pengalaman dalam pengembangan web dan berbagai teknologi. Saya menyukai tantangan baru dan terus belajar untuk meningkatkan keterampilan saya.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Proyek</h2>
-            <div class="project">
-                <h3>Proyek 1</h3>
-                <p>Deskripsi singkat tentang proyek 1.</p>
-                <a href="https://github.com/username/repo1" target="_blank">Lihat di GitHub</a>
+    <div class="container">
+        <aside class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="./assets/img/gugun.jpg" alt="Profile picture of Nanda Gunawan" />
+                </div>
+                <h2>Nanda Gunawan<br /><span>Backend Developer</span></h2>
             </div>
-            <div class="project">
-                <h3>Proyek 2</h3>
-                <p>Deskripsi singkat tentang proyek 2.</p>
-                <a href="https://github.com/username/repo2" target="_blank">Lihat di GitHub</a>
-            </div>
-            <!-- Tambahkan proyek lain sesuai kebutuhan -->
-        </section>
-
-        <section id="contact">
-            <h2>Kontak</h2>
-            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Nama Anda. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+            <section class="contactInfo">
+                <h3 class="title">Informasi Kontak</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://api.whatsapp.com/send?phone=6281357879215">+62 813 5787 9215</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text"><a href="mailto:nandagunawan998@gmail.com">nandagunawan998@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://gugun09.site">www.gugun09.site</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.linkedin.com/in/gugun09">www.linkedin.com/me</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Bulungan, Kalimantan Utara, ID</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="contactInfo education">
+                <h3 class="title">Pendidikan</h3>
+                <ul>
+                    <li>
+                        <h5>2017 - 2021</h5>
+                        <h4>D4 - Teknologi Informasi</h4>
+                        <h4>Politeknik Pertanian Negeri Samarinda</h4>
+                    </li>
+                    <li>
+                        <h5>2022</h5>
+                        <h4>Web Development Bootcamp</h4>
+                        <h4>Dicoding Academy</h4>
+                    </li>
+                    <li>
+                        <h5>2023</h5>
+                        <h4>Cloud Computing Professional Certificate</h4>
+                        <h4>Coursera - Google Cloud</h4>
+                    </li>
+                </ul>
+            </section>
+            <section class="contactInfo certifications">
+                <h3 class="title">Sertifikat</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.dicoding.com/certificates/MEPJ5EQRWP3V">
+                            <h4>Belajar Membuat Aplikasi Android untuk Pemula</h4>
+                        </a>
+                        <h4>Dicoding Academy</h4>
+                    </li>
+                    <li>
+                        <a href="https://www.dicoding.com/certificates/L4PQM4KDQZO1">
+                            <h4>Belajar Machine Learning untuk Pemula</h4>
+                        </a>
+                        <h4>Dicoding Academy</h4>
+                    </li>
+                    <li>
+                        <a href="https://www.dicoding.com/certificates/GRX54K09VP0M">
+                            <h4>Belajar Dasar Pemrograman JavaScript</h4>
+                        </a>
+                        <h4>Dicoding Academy</h4>
+                    </li>
+                    <li>
+                        <a href="https://www.dicoding.com/certificates/JLX143K9GX72">
+                            <h4>Belajar Dasar AI</h4>
+                        </a>
+                        <h4>Dicoding Academy</h4>
+                    </li>
+                </ul>
+            </section>
+            <section class="contactInfo language">
+                <h3 class="title">Bahasa</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent"><div style="width: 60%"></div></span>
+                    </li>
+                    <li>
+                        <span class="text">Indonesian</span>
+                        <span class="percent"><div style="width: 100%"></div></span>
+                    </li>
+                    <li>
+                        <span class="text">Jawa</span>
+                        <span class="percent"><div style="width: 90%"></div></span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <main class="right_Side">
+            <section class="about">
+                <h2 class="title2">Ringkasan</h2>
+                <p>
+                    Saya adalah seorang Backend Developer berpengalaman dengan latar belakang dalam pengembangan aplikasi web dan sistem informasi. Saya sangat antusias dalam menciptakan solusi yang efisien dan efektif. Dengan keahlian dalam berbagai bahasa pemrograman dan alat pengembangan, saya memiliki kemampuan untuk merancang, mengembangkan, dan memelihara aplikasi dengan standar tinggi. Saya percaya bahwa kolaborasi dan komunikasi yang baik adalah kunci keberhasilan setiap proyek.
+                </p>
+            </section>
+            <section class="about experience">
+                <h2 class="title2">Pengalaman</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2021 - 2023</h5>
+                        <h5>PT. Tech Innovators <span>Jakarta, Indonesia</span></h5>
+                    </div>
+                    <div class="text">
+                        <h4>Senior Backend Developer</h4>
+                        <ul>
+                            <li>Memimpin tim pengembangan dalam membangun API yang scalable dan dapat diandalkan untuk aplikasi web, menggunakan Node.js dan Express.</li>
+                            <li>Berkolaborasi dengan tim frontend untuk memastikan integrasi yang mulus antara frontend dan backend, termasuk pengujian unit dan integrasi.</li>
+                            <li>Mengimplementasikan arsitektur microservices untuk meningkatkan efisiensi dan kecepatan pengembangan aplikasi.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - 2021</h5>
+                        <h5>Freelancer <span>Remote</span></h5>
+                    </div>
+                    <div class="text">
+                        <h4>Backend Developer</h4>
+                        <ul>
+                            <li>Mengerjakan berbagai proyek pengembangan aplikasi web untuk klien internasional, fokus pada pengembangan backend dan manajemen database.</li>
+                            <li>Menggunakan AWS untuk mengelola dan mengoptimalkan infrastruktur cloud, termasuk deployment CI/CD.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2020 - Present</h5>
+                        <h5>PT. Freelancer.id <span>Jakarta, Indonesia</span></h5>
+                    </div>
+                    <div class="text">
+                        <h4>Freelancer</h4>
+                        <ul>
+                            <li>Bekerja dengan berbagai klien internasional untuk migrasi layanan lokal ke AWS, serta mengoptimalkan aplikasi untuk performa yang lebih baik.</li>
+                            <li>Menyediakan konsultasi dan pengembangan proyek berbasis cloud dengan menggunakan teknologi terbaru dan praktik terbaik industri.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="about skills">
+                <h2 class="title2">Kemampuan</h2>
+                <div class="box">
+                    <h4>Node.js</h4>
+                    <div class="percent">
+                        <div style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Express.js</h4>
+                    <div class="percent">
+                        <div style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>MongoDB</h4>
+                    <div class="percent">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>MySQL</h4>
+                    <div class="percent">
+                        <div style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>AWS</h4>
+                    <div class="percent">
+                        <div style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Docker</h4>
+                    <div class="percent">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Framework Laravel</h4>
+                    <div class="percent">
+                        <div style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Golang</h4>
+                    <div class="percent">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent">
+                        <div style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Git</h4>
+                    <div class="percent">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
